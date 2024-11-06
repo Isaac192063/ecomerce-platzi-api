@@ -1,0 +1,14 @@
+<article class="card">
+    <figure>
+        <img class="img-card" [src]="product.images! ? 'https://http2.mlstatic.com/D_NQ_NP_2X_780662-MLA74792938840_032024-F.webp': 'https://http2.mlstatic.com/D_NQ_NP_2X_780662-MLA74792938840_032024-F.webp' " alt="">
+    </figure>
+    <figcaption class="card-description">
+        <small class="price-before">$ {{product.price}}</small>
+        <span class="dto">
+            <b><h1>$ 1.370.000</h1></b>
+            <p class="dto-text">40% de dcto</p>
+        </span>
+        <span ><p class="dto-text">Envio gratis full</p></span>
+        <h5>{{product.title}}</h5>
+    </figcaption>
+</article>

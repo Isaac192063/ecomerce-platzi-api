@@ -1,0 +1,16 @@
+<section class="container">
+    <div class="carousel-container">
+        <button (click)="prev()" class="control prev">&lt;</button>
+
+        <div class="carousel-track-container">
+            <div class="carousel-track" [style.transform]="getTransform()">
+                <div *ngFor="let product of products; let i = index; trackBy: trackByIndex" class="carousel-item">
+                    <app-card [product]="product"></app-card>
+                </div>
+            </div>
+        </div>
+
+        <button (click)="next()" class="control next">&gt;</button>
+    </div>
+
+</section>

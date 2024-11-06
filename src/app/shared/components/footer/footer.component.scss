@@ -1,0 +1,47 @@
+@import '../../../utils/colors.scss';
+
+footer{
+    .cont{
+        background-color: $secondary-color;
+    }
+    .descriptions{
+        padding: 50px 0;
+        width: 100%;
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        a{
+            color: white;
+        }
+        ul{
+            list-style: none;
+        }
+        h3{
+            margin: 10px 0;
+        }
+    }
+    .cont2{
+        .descriptions2{
+            padding: 10px 0;
+            width: 100%;
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            justify-content: space-between;
+            font-size: 14px;
+            ul{
+                list-style: none;
+                display: flex;
+                gap: 1rem;
+            }
+            h3{
+                margin: 10px 0;
+            }
+        }
+        background-color: #bababa;
+    }
+}

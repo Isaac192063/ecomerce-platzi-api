@@ -1,0 +1,32 @@
+<section class="main">
+    <div class="container">
+        <div class="form-group">
+            <form [formGroup]="newUser" (submit)="createAccount()">
+                <div class="avatar" >
+                    <img *ngIf="image" [src]="image" alt="imagen de perfil">
+                </div>
+                <h2>Registrar cuenta</h2>
+                <div class="form-control">
+                    <input type="text" placeholder=" " formControlName="name">
+                    <label for="">Nombre</label>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder=" " formControlName="email">
+                    <label for="">Email</label>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder=" " formControlName="password">
+                    <label for="">Contraseña</label>
+                </div>
+                <div class="form-control">
+                    <input type="text" placeholder=" " formControlName="repeatPassword">
+                    <label for="">Repetir contraseña</label>
+                </div>
+                <div>
+                    <input type="file" formControlName="image" (change)="selectImage($event)">
+                </div>
+                <input type="submit" value="Registrarse">
+            </form>
+        </div>
+    </div>
+</section>

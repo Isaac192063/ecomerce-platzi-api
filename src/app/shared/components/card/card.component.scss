@@ -1,0 +1,54 @@
+@import "../../../utils/colors.scss";
+
+.card {
+    border: 1px solid rgb(225, 225, 225);
+    background-color: white;
+    border-radius: 5px;
+    width: 230px;
+    height: 385px;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out;
+    .card-description {
+        padding: 14px;
+        h5 {
+            font-size: 14px;
+        }
+        .price-before {
+            text-decoration: line-through;
+        }
+    }
+    figure {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .img-card {
+            height: auto;
+            max-width: 100%;
+            border-bottom: 1px solid #f5f5f5;
+            border-radius: 4px 4px 0 0;
+            height: 224px;
+            max-height: unset;
+            width: 224px;
+            margin: auto;
+        }
+    }
+    .dto {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        h1 {
+            font-size: 24px;
+        }
+    }
+    .dto-text {
+        font-size: 14px;
+        color: #00a650;
+        margin: 5px 0 !important;
+    }
+}
+
+.card:hover {
+    box-shadow: 1px -4px 17px 7px rgba(212, 212, 212, 0.6);
+    -webkit-box-shadow: 1px -4px 17px 7px rgba(212, 212, 212, 0.6);
+    -moz-box-shadow: 1px -4px 17px 7px rgba(212, 212, 212, 0.6);
+}

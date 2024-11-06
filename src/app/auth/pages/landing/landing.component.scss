@@ -1,0 +1,20 @@
+@import "./../../../utils/colors";
+
+.promo {
+    height: 700px;
+    width: 100%;
+    background: rgb(255, 46, 99);
+    background: linear-gradient(
+        180deg,
+        $promo-color 50%,
+        $cuaternary-color 100%
+    );
+    .img-promo{
+        img{
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+}
+
