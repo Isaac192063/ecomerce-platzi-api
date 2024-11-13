@@ -11,14 +11,12 @@ export class AuthService {
     private http = inject(HttpClient);
     private authUrl: string = BASEURL + '/auth/login';
 
-    public loginUser(email: string,password: string): Observable<IAuthResponse> {
+    public loginUser(identifier: string,password: string): Observable<IAuthResponse> {
         return this.http.post<IAuthResponse>(this.authUrl, {
-            email,
+            identifier,
             password,
         });
     }
-
-
 
     public isAuthorizated(): boolean{
         return false;

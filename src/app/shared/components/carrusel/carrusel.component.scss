@@ -1,55 +1,7 @@
 @import '../../../utils/colors.scss';
 
-.carrusel{
-    display: grid;
-    grid-template-columns: repeat(5, auto) ;
-    column-gap: 10px;
-}
 .container{
     max-width: 1200px;
     width: 100%;
     margin: auto;
-    position: relative;
-    .carousel-container {
-        position: relative;
-        width: 100%;
-        overflow: hidden;
-
-        .carousel-track-container {
-          overflow: hidden;
-          width: 100%;
-        }
-
-        .carousel-track {
-          display: flex;
-          transition: transform 0.5s ease;
-        }
-
-        .carousel-item {
-          flex: 0 0 25%;  // Si quieres mostrar 4 productos visibles, cada uno ocupa el 25% del carrusel
-          box-sizing: border-box;
-          padding: 10px;
-        }
-
-        .control {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background-color: rgba(0, 0, 0, 0.5);
-          color: white;
-          border: none;
-          padding: 10px;
-          cursor: pointer;
-          font-size: 18px;
-        }
-
-        .prev {
-          left: -10px;
-        }
-
-        .next {
-          right: 10px;
-        }
-      }
-
 }

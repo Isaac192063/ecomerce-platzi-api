@@ -1,9 +1,16 @@
+<div class="card flex justify-content-center">
+    <p-image
+        [src]="image!"
+        [previewImageSrc]="image!"
+        alt="Image"
+        width="250"
+        [preview]="true" />
+</div>
 <section class="main">
     <div class="container">
         <div class="form-group">
             <form [formGroup]="newUser" (submit)="createAccount()">
-                <div class="avatar" >
-                    <img *ngIf="image" [src]="image" alt="imagen de perfil">
+                <div class="avatar">
                 </div>
                 <h2>Registrar cuenta</h2>
                 <div class="form-control">
@@ -23,7 +30,7 @@
                     <label for="">Repetir contraseña</label>
                 </div>
                 <div>
-                    <input type="file" formControlName="image" (change)="selectImage($event)">
+                    <input type="file" formControlName="avatar" (change)="selectImage($event)">
                 </div>
                 <input type="submit" value="Registrarse">
             </form>

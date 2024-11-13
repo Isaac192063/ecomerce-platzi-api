@@ -58,11 +58,11 @@
                 justify-content: center;
                 align-items: center;
 
-                img {
+                div {
                     width: 100%; // La imagen ocupa el 100% del contenedor
                     height: 100%; // Mantiene el tamaño del contenedor
-                    border-radius: 50%; // Asegura que la imagen también sea redonda
-                    object-fit: cover; // Asegura que la imagen se ajuste bien en el espacio y no se deforme
+                    border-radius: 50% !important; // Asegura que la imagen también sea redonda
+                    object-fit: cover !important; // Asegura que la imagen se ajuste bien en el espacio y no se deforme
                 }
             }
 

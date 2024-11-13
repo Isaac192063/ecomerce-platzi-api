@@ -2,18 +2,18 @@ import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { IAuthRequest } from '../../model/auth.model';
 import { AuthService } from '../../service/auth.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
     selector: 'app-login',
     standalone: true,
-    imports: [FormsModule],
+    imports: [FormsModule, RouterLink],
     templateUrl: './login.component.html',
     styleUrl: './login.component.scss',
 })
 export class LoginComponent {
     authRequest: IAuthRequest = {
-        email: '',
+        identifier: '',
         password: '',
     };
 
@@ -25,7 +25,7 @@ export class LoginComponent {
     login() {
         console.log(this.authRequest);
         this.authService
-            .loginUser(this.authRequest.email, this.authRequest.password)
+            .loginUser(this.authRequest.identifier, this.authRequest.password)
             .subscribe((data) => {
                 console.log(data);
 

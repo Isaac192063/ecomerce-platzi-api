@@ -1,2 +1,2 @@
-const BASEURL = 'https://api.escuelajs.co/api/v1';
+const BASEURL = 'http://localhost:8080';
 export default BASEURL;

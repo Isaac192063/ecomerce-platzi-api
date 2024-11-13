@@ -5,18 +5,18 @@
     <div class="form-group">
         <form class="form" (ngSubmit)="login()">
             <div>
-                <label for="email">E-mail</label><br>
-                <input name="email" id="email" type="text" [(ngModel)]="authRequest.email" required>
+                <label for="identifier">E-mail</label><br>
+                <input name="identifier" id="text" type="text" [(ngModel)]="authRequest.identifier" required>
             </div>
             <div>
                 <label for="Password">Password</label><br>
-                <input name="password" id="Password" type="text" [(ngModel)]="authRequest.password" required >
+                <input name="password" id="Password" type="text" [(ngModel)]="authRequest.password" required>
             </div>
             <input class="btn-continue" type="submit" value="Continuar">
-            <div  class="line-with-o">
+            <div class="line-with-o">
                 <span>o</span>
             </div>
-            <input class="btn-count" type="submit" value="Crear cuenta">
+            <button class="btn-count"><a routerLink="/register">Crear cuenta</a> </button>
         </form>
     </div>
 </section>

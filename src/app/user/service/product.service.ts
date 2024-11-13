@@ -9,7 +9,7 @@ import BASEURL from '../../utils/BASE_URL';
 })
 export class ProductService {
     private http = inject(HttpClient);
-    private productURL: string = BASEURL + '/products';
+    private productURL: string = BASEURL + '/products?offset=0&limit=10';
 
     public getAllProduct(): Observable<IProduct[]> {
         return this.http.get<IProduct[]>(this.productURL);
